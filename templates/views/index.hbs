@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+   
+    <title>Weather</title>
+</head>
+<body>
+    
+        <div class="main-content">
+            {{>header}}
+            <p>Use this site to see weather</p>
+            <form action="" id="form">
+                City: <input type="text" name="city" placeholder="location">
+                <input type="submit" name="submit" value="Search">
+            </form>
+            <br>
+            <br>
+            <center><div id="demo" style="text-align: left;"></div></center>
+            
+            {{>footer}}        
+        </div>    
+         <script src="./js/src.js"></script>
+   
+</body>
+</html>
