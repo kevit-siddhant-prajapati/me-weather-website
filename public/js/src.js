@@ -8,7 +8,7 @@ weatherForm.addEventListener('submit', (e) => {
 
     const location = search.value
 
-    fetch('http://localhost:3000/weather?address=' + location).then((response) => {
+    fetch('https://weatherapp-7vmb.onrender.com:3000/weather?address=' + location).then((response) => {
         response.json().then((data) => {
             if (data.error) {
                 console.log('Something went wrong')
