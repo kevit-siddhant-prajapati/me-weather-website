@@ -14,12 +14,11 @@ const forecast = (let, long, callback) => {
         callback('Unable to get data of forecast' + response.body.error, undefined)
     } else {
         await data
-        callback(undefined, `This is weather data information of city ${data.location.name} which in country ${data.location.country}
-                            it's cordinates are (${data.location.lat},${data.location.lon})
-                            Temperature: ${data.current.temperature} ,
-                            Wind Speed: ${data.current.wind_speed} ,
-                            Wind direction: ${data.current.wind_dir} ,
-                            Pressure: ${data.current.pressure} ,
+        callback(undefined, `This is weather data information of city <br>
+                            Temperature: ${data.current.temperature} F,<br>
+                            Wind Speed: ${data.current.wind_speed} ,<br>
+                            Wind direction: ${data.current.wind_dir} ,<br>
+                            Pressure: ${data.current.pressure} ,<br>
                             Humidity: ${data.current.humidity}` )
     }
     
